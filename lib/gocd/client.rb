@@ -171,7 +171,7 @@ module GoCD
       })
 
       @rest_client.post("#{@base_url}/api/admin/config_repos",
-                        config_repo, content_type: :json,  accept: 'application/vnd.go.cd.v1+json', Authorization: @auth_header)
+                        config_repo, content_type: :json,  accept: 'application/vnd.go.cd.v2+json', Authorization: @auth_header)
     end
 
     def set_file_based_auth_config(file)
