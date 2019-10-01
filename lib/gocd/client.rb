@@ -18,7 +18,7 @@ module GoCD
     def create_pipeline(data)
       @rest_client.post("#{@base_url}/api/admin/pipelines",
                         data,
-                        accept: 'application/vnd.go.cd.v6+json',
+                        accept: 'application/vnd.go.cd.v9+json',
                         content_type: 'application/json', Authorization: @auth_header)
     end
 
